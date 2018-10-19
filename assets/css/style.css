@@ -63,7 +63,7 @@ h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: #4aaaa5;
-  
+     
 }
 
 h1 {
@@ -71,8 +71,9 @@ h1 {
   font-size: 30px;
   line-height: 49px;
   border-bottom: 3px solid #ddd;
-  
-}
+  -webkit-text-stroke: #373541;
+  -webkit-text-stroke-width: 1px;
+  }
 
 h2,
 h3 {
@@ -110,7 +111,8 @@ h3 {
   text-decoration: none;
   background: #4aaaa5;
   border-radius: 2em;
-}
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.959);
+    }
 
 nav {
   float: right;
@@ -230,7 +232,7 @@ h3, h2 {
   background: #ddbfbf;
   border: 1px solid #ddd;
   border-radius: 2em;
-  
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.959);
 }
 
 #mainimg{
@@ -238,6 +240,7 @@ h3, h2 {
   height: auto;
   margin-right: 5%;
   border-radius: 50% / 10%;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.959);
   
 }
 
@@ -249,6 +252,7 @@ h3, h2 {
   max-width: 100%;
   margin: 20px 0 25px;
   overflow: auto;
+  
 }
 
 .work:nth-child(even) {
@@ -259,6 +263,8 @@ h3, h2 {
   max-width: 100%;
   border: 0 none;
   opacity: 0.8;
+  border-radius: 50% / 10%;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.959);
 }
 
 .work h3 {
@@ -309,6 +315,7 @@ textarea {
   font-size: 14px;
   border: 1px solid #ddd;
   border-radius: 2em;
+  box-shadow: 3px 6px;
 }
 
 textarea {
@@ -323,10 +330,13 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
   border-radius: 2em;
-}
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.959);
+    }
 
 #Aboutme{
   color: #4aaaa5;
+  -webkit-text-stroke: #373541;
+  -webkit-text-stroke-width: 1px;
 }
 
 

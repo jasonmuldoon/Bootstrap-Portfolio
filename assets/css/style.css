@@ -109,6 +109,7 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+  border-radius: 2em;
 }
 
 nav {
@@ -173,6 +174,7 @@ nav a:first-child {
   right: 0;
   bottom: 0;
   background: #949393;
+  border-radius: 2em;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition-property: transform;
@@ -235,6 +237,7 @@ h3, h2 {
   max-width: 50%;
   height: auto;
   margin-right: 5%;
+  border-radius: 50% / 10%;
   
 }
 
@@ -305,6 +308,7 @@ textarea {
   padding: 0 10px;
   font-size: 14px;
   border: 1px solid #ddd;
+  border-radius: 2em;
 }
 
 textarea {
@@ -318,6 +322,7 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+  border-radius: 2em;
 }
 
 #Aboutme{

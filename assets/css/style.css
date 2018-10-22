@@ -242,8 +242,9 @@ h3, h2 {
 
 .main-section {
   float: left;
-   padding: 30px;
-   height: 100vh;
+   padding: 12%;
+   height: 100%;
+   width: 100%;
    display: flex;
    align-items: center;
    justify-content: center;

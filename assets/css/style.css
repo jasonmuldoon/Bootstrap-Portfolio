@@ -41,11 +41,12 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   clear: both;
   animation: 2s;
   animation-name: slideInRight;
+  
   }
 
   @keyframes slideInRight {
@@ -241,13 +242,16 @@ h3, h2 {
 
 .main-section {
   float: left;
-  width: 100%;
-  max-width: 960px;
-  padding: 30px;
-  margin: 0 0 40px;
+   padding: 30px;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   overflow: hidden;
   background: #ddbfbf;
   border: 1px solid #ddd;
-  border-radius: 2em;
+  border-radius: 38% 62% 60% 40% / 30% 45% 55% 70% ;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.959);
 }
 

@@ -89,7 +89,7 @@ h2 {
 
 h1 {
   padding: 20px;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 49px;
   border-bottom: 3px solid #ddd;
   -webkit-text-stroke: #373541;
@@ -113,7 +113,7 @@ h3 {
   margin: 0 0 30px;
   overflow: auto;
   color: #fff;
-  background: #ddbfbf;
+  background: linear-gradient(90deg, #aa904a  , #ddbfbf);
   border-bottom: 2px solid #ccc;
 }
 
@@ -127,9 +127,9 @@ h3 {
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
-  color: #fff;
+  color: rgb(247, 155, 178);
   text-align: center;
-  text-decoration: none;
+  
   background: #4aaaa5;
   border-radius: 2em;
   box-shadow: 1px 2px rgba(0, 0, 0, 0.959);
@@ -169,6 +169,7 @@ nav a {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); 
+  font-weight: bolder;
 }
 
 nav a:first-child {
@@ -196,8 +197,8 @@ nav a:first-child {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #949393;
-  border-radius: 2em;
+  background: #646464;
+    border-radius: 2em;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition-property: transform;
@@ -247,7 +248,7 @@ h3, h2 {
 
 .main-section {
   float: left;
-   padding: 12%;
+   padding: 11%;
    height: 100%;
    width: 100%;
    display: flex;
@@ -255,7 +256,7 @@ h3, h2 {
    justify-content: center;
    text-align: center;
    overflow: hidden;
-  background: #ddbfbf;
+   background: linear-gradient(90deg, #aa904a  , #ddbfbf);
   border: 1px solid #ddd;
   border-radius: 38% 62% 60% 40% / 30% 45% 55% 70% ;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.959);
@@ -289,7 +290,6 @@ h3, h2 {
   max-width: 100%;
   max-height: 80%;
   border: 0 none;
-  display: flex;
   min-width: 50%;
   min-height: 60px;
   opacity: 0.8;
@@ -321,20 +321,22 @@ h3, h2 {
 
 /* contact page */
 
+
+
 #contact-form ul {
   margin-bottom: 20px;
       }
 
 #contact-form li {
   margin-bottom: 10px;
-  display: flex;
+  
   }
 
 label,
 input[type=text],
 input[type=email],
 textarea {
-  display: flex;
+  
   width: 100%;
   height: 100%;
 }
@@ -343,7 +345,7 @@ input[type=text],
 input[type=email],
 textarea {
   height: 35px;
-  padding: 0 10px;
+   padding:  10px;
   font-size: 14px;
   border: 1px solid #ddd;
   border-radius: 2em;

@@ -115,6 +115,8 @@ h3 {
   color: #fff;
   background: linear-gradient(90deg, #aa904a  , #ddbfbf);
   border-bottom: 2px solid #ccc;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
 }
 
 #logo {
@@ -216,6 +218,79 @@ nav a:first-child {
   transform: scale(0);
 }
 
+.social-container {
+  text-align: center;
+  max-width: 250px;
+}
+
+@mixin social-container($color) {
+  .social-cube {
+    .front, .back {
+      background: $color;
+    }
+    .bottom {
+      background: darken($color, 10%);
+    }
+  }
+   .social-cube:hover {
+    .bottom {
+      background: $color;
+    }
+    .front {
+      background: lighten($color, 10%);
+    }
+  }
+}
+
+
+.social-container {
+  position: relative;
+  display: inline-block;
+  width: 164px;
+  height: 30px;
+  perspective: 300px;
+  font-size: 24px;
+  margin: 8px;
+  background-color: #373541;
+}
+  .social-cube {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.333s;
+    transform: translateZ(-18px);
+  }
+    .front, .bottom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      transition: background 0.444s;
+    }
+    .front {
+      transform: rotateX(0deg) translateZ(18px);
+    }
+    .bottom {
+      transform: rotateX(-90deg) translateZ(18px);
+    }
+   
+  
+   .social-cube:hover {
+    transform: translateZ(-18px) rotateX(90deg);
+  }
+
+
+
+
+
 
 /* footer */
 
@@ -230,6 +305,8 @@ footer {
   background: #666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
+  border-top-left-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
 }
 
 h3, h2 {

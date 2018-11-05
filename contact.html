@@ -8,35 +8,142 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
 
-<body>
 
+  <style>
+      *, *:before, *:after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .center, .dot {
+        background-color: #4aaaa5;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .center {
+        height: 50px;
+        margin-top: 25px;
+        margin-left: -25px;
+        left: 50%;
+        width: 50px;
+        z-index: 2;
+      }
+      .dot {
+        height: 24px;
+        width: 24px;
+        top: 50%;
+              margin-top: -12px;
+              margin-left: -212px;
+        left: 50%;
+              display: flex;
+              justify-content: center;
+              
+      }
+      
+      .one {
+        animation: one 4s cubic-bezier(.53,.38,.37,1) infinite;
+        left: 0;
+      }
+      @keyframes one {
+          0% { transform: translate3d(0, 0, 0); }
+         25% { transform: translate3d(205px, 0, 0); }
+         50% { transform: translate3d(292px, 0, 0); }
+         65% { transform: translate3d(205px, 0, 0); }
+        100% { transform: translate3d(0, 0, 0); }
+      }
+      
+      .two {
+        animation: two 4s cubic-bezier(.53,.38,.37,1) infinite;
+        left: 59px;
+      }
+      @keyframes two {
+          0% { transform: translate3d(0, 0, 0); }
+         20% { transform: translate3d(146px, 0, 0); }
+         50% { transform: translate3d(292px, 0, 0); }
+         70% { transform: translate3d(146px, 0, 0); }
+        100% { transform: translate3d(0, 0, 0); }
+      }
+      
+      .three {
+        animation: three 4s cubic-bezier(.53,.38,.37,1) infinite;
+        left: 118px;
+      }
+      @keyframes three {
+          0% { transform: translate3d(0, 0, 0); }
+         15% { transform: translate3d(88px, 0, 0); }
+         50% { transform: translate3d(292px, 0, 0); }
+         75% { transform: translate3d(88px, 0, 0); }
+        100% { transform: translate3d(0, 0, 0); }
+      }
+      
+      .center { animation: scaling 6s ease-in-out .2s infinite; }
+      @keyframes scaling {
+          0% { transform: scale(1); }
+         12% { transform: scale(1.2); }
+         20% { transform: scale(.8); }
+         21% { transform: scale(1.1); }
+         22% { transform: scale(1); }
+         33% { transform: scale(1); }
+         45% { transform: scale(1.2); }
+         53% { transform: scale(.8); }
+         54% { transform: scale(1.1); }
+         55% { transform: scale(1); }
+         65% { transform: scale(1); }
+         77% { transform: scale(1.2); }
+         87% { transform: scale(.8); }
+         88% { transform: scale(1.1); }
+         89% { transform: scale(1); }
+        100% { transform: scale(1); }
+      }
+    </style>
+    </head>
+  
+  <body>
+  
     <header id="masthead">
-    
-        <div class="container">
-            <div class="row">
-    
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" id="logo-bar">
+      
+      <div class="container">
+          <div class="row">
+  
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" id="logo-bar">
                       
-                      <a href="index.html" id="logo" class="hvr-rectangle-in">Jason Muldoon</a>
+                              <a href="index.html" id="logo" class="hvr-rectangle-in">Jason Muldoon</a>
+                          
+                  </div>
+                
+                          <div class="center"></div>
+                         
+                          
+                      
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                          <div class="dot one" ></div>
+                          <div class="dot two" ></div>
+                          <div class="dot three"></div>
+                      <nav>
                         
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                   
-                        <nav>
-                        
+                          
                           <a href="portfolio.html" class="hvr-grow">Portfolio</a>
                           <a href="contact.html" class="hvr-grow">Contact</a>
-                         </nav>
-                    
-                    </div>
-                    
-                </div>
-            </div>
-    
-      </header>
+                      </nav>
+                  
+                  </div>
+                  
+              </div>
+          </div>
+              
+    </header>
+  
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+          <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+      </defs>
+  </svg>
 
   <div id="main-container" id="container">
     <div class="row">
@@ -58,7 +165,7 @@
                        values="1;.2;1" calcMode="linear"
                        repeatCount="indefinite" />
                   </circle>
-                  <circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".3">
+                  <circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".">
                       <animate attributeName="fill-opacity"
                        begin="100ms" dur="1s"
                        values="1;.2;1" calcMode="linear"
@@ -107,8 +214,11 @@
                        repeatCount="indefinite" />
                   </circle>
               </svg>
+              <p></p>
               <h4>j.muldoon@gmail.com 
-                <br>~ 407-738-0775</h4>
+                <h4>Phone ~ 407-738-0775</h4>
+                <br>
+
                 
                    
           
